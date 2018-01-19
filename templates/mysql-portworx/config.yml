@@ -1,0 +1,5 @@
+name: MySQL-Portworx
+description: |
+  MySQL — an open-source relational database management system (RDBMS) Backed by portworx
+version: v0.0.2
+category: Databases
