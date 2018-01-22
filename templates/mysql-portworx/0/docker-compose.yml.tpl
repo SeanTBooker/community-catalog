@@ -21,6 +21,8 @@ services:
     image: busybox
     labels:
       io.rancher.container.start_once: true
+      io.rancher.scheduler.affinity:host_label: fabric=px
+    volume_driver: pxd
     volumes:
       - anchsand-db:/var/lib/mysql
   mysql:
