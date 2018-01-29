@@ -8,8 +8,9 @@ services:
     image: busybox
     labels:
       io.rancher.container.start_once: true
+      io.rancher.scheduler.affinity:host_label: mysql=thishost
     volumes:
-      - /var/lib/mysql
+      - /bdsbx/mysql:/var/lib/mysql
   mysql:
     image: ${mysql_image}
     environment:
